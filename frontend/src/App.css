@@ -1,0 +1,167 @@
+/* frontend/src/App.css */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.App {
+  max-width: 700px; /* Slightly smaller max width perhaps */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  margin: 0;
+  color: #2c3e50;
+  font-style: italic; /* Maybe a slightly different style */
+}
+
+.logout-button {
+  padding: 8px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.App-main {
+  padding: 0 10px;
+}
+
+.error-message { /* Changed from error to more general notice */
+  color: #e74c3c;
+  background-color: #fdd;
+  border: 1px solid #e74c3c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.limit-reached-message {
+  color: #f39c12; /* Warning color */
+  background-color: #fef9e7;
+  border: 1px solid #f39c12;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+
+/* --- Auth Forms (No changes needed) --- */
+.auth-container {
+  max-width: 400px; margin: 30px auto; padding: 25px; border: 1px solid #ddd;
+  border-radius: 5px; background-color: #f9f9f9;
+}
+.auth-container h2 { text-align: center; margin-bottom: 20px; color: #34495e; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-group input { width: 95%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1em; }
+.auth-button { width: 100%; padding: 12px; background-color: #3498db; color: white; border: none;
+  border-radius: 4px; cursor: pointer; font-size: 1.1em; margin-top: 10px; }
+.auth-button:hover { background-color: #2980b9; }
+.toggle-auth-button { background: none; border: none; color: #3498db; cursor: pointer; margin-top: 15px;
+  display: block; width: 100%; text-align: center; }
+.toggle-auth-button:hover { text-decoration: underline; }
+
+
+/* --- Intentions (Adapted from Tasks) --- */
+.intentions-container h2 { /* Renamed class */
+  color: #34495e;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  text-align: center; /* Center the heading */
+}
+
+.add-intention-form { /* Renamed class */
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-intention-form input { /* Renamed class */
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 1em;
+}
+
+.add-intention-form button { /* Renamed class */
+  padding: 10px 15px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 1em;
+}
+.add-intention-form button:hover { /* Renamed class */
+  background-color: #27ae60;
+}
+
+.intention-list { /* Renamed class */
+  list-style: none;
+  padding: 0;
+}
+
+.intention-item { /* Renamed class */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.intention-item:hover { /* Renamed class */
+  background-color: #ecf0f1;
+}
+
+.intention-item.completed .intention-title { /* Renamed class */
+  text-decoration: line-through;
+  color: #95a5a6;
+  font-style: italic;
+}
+
+.intention-title { /* Renamed class */
+  cursor: pointer;
+  flex-grow: 1;
+  margin-right: 10px;
+  font-size: 1.1em; /* Slightly larger text */
+}
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-left: auto; /* Pushes button to the right */
+}
+.delete-button:hover {
+  background-color: #e74c3c;
+  color: white;
+}
